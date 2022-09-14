@@ -1,0 +1,300 @@
+---
+title: "Cyclistic_Data_Rmarkdown"
+author: "Visan Ly"
+date: "2022-08-30"
+output: html_document
+---
+
+## Install and load the libraries needed for the data cleaning.
+```{r}
+install.packages('tidyverse')
+install.packages('janitor')
+```
+
+## Loading
+```{r}
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(ggplot2)
+library(hms)
+```
+
+## Load the data from January 2021 to December 2021
+```{r}
+trips_2021_01 <- read.csv('202101-divvy-tripdata.csv')
+trips_2021_02 <- read.csv('202102-divvy-tripdata.csv')
+trips_2021_03 <- read.csv('202103-divvy-tripdata.csv')
+trips_2021_04 <- read.csv('202104-divvy-tripdata.csv')
+trips_2021_05 <- read.csv('202105-divvy-tripdata.csv')
+trips_2021_06 <- read.csv('202106-divvy-tripdata.csv')
+trips_2021_07 <- read.csv('202107-divvy-tripdata.csv')
+trips_2021_08 <- read.csv('202108-divvy-tripdata.csv')
+trips_2021_09 <- read.csv('202109-divvy-tripdata.csv')
+trips_2021_10 <- read.csv('202110-divvy-tripdata.csv')
+trips_2021_11 <- read.csv('202111-divvy-tripdata.csv')
+trips_2021_12 <- read.csv('202112-divvy-tripdata.csv')
+```
+
+
+## Check the column names of each file so that they match perfectly before we merge them.
+```{r}
+colnames(trips_2021_01)
+colnames(trips_2021_02)
+colnames(trips_2021_03)
+colnames(trips_2021_04)
+colnames(trips_2021_05)
+colnames(trips_2021_06)
+colnames(trips_2021_07)
+colnames(trips_2021_08)
+colnames(trips_2021_09)
+colnames(trips_2021_10)
+colnames(trips_2021_11)
+colnames(trips_2021_12)
+```
+
+## Inspect the data for each and see if there are any inconsistencies.
+```{r}
+View(trips_2021_01)
+View(trips_2021_02)
+View(trips_2021_03)
+View(trips_2021_04)
+View(trips_2021_05)
+View(trips_2021_06)
+View(trips_2021_07)
+View(trips_2021_08)
+View(trips_2021_09)
+View(trips_2021_10)
+View(trips_2021_11)
+View(trips_2021_12)
+```
+
+## Inspect the dataframe for each set of data to ensure the formats match before integration.
+```{r}
+str(trips_2021_01)
+str(trips_2021_02)
+str(trips_2021_03)
+str(trips_2021_04)
+str(trips_2021_05)
+str(trips_2021_06)
+str(trips_2021_07)
+str(trips_2021_08)
+str(trips_2021_09)
+str(trips_2021_10)
+str(trips_2021_11)
+str(trips_2021_12)
+```
+
+## Compare_df_cols
+This will generate a comparison of data and tells us if they will succeed in binding by rows.
+```{r}
+compare_df_cols(trips_2021_01, trips_2021_02, trips_2021_03, trips_2021_04, trips_2021_05, trips_2021_06, trips_2021_07, trips_2021_08, trips_2021_09, trips_2021_10, trips_2021_11, trips_2021_12)
+```
+
+## Merge into one file
+Now, we can merge into one file.
+```{r}
+all_trips_2021 <- bind_rows(trips_2021_01, trips_2021_02, trips_2021_03, trips_2021_04, trips_2021_05, trips_2021_06, trips_2021_07, trips_2021_08, trips_2021_09, trips_2021_10, trips_2021_11, trips_2021_12)
+```
+
+## View the file to ensure it merged properly.
+```{r}
+View(all_trips_2021)
+```
+
+## Need to convert start and end times from characters to date-string for our analysis. We'll get some help from the lubridate package!
+```{r}
+all_trips_2021$started_at = ymd_hms(all_trips_2021$started_at)
+all_trips_2021$ended_at = ymd_hms(all_trips_2021$ended_at)
+```
+
+## Check to see if the change was done correctly
+```{r}
+str(all_trips_2021)
+```
+
+## Create columns of just the day, month, and year for easier analysis by these variables alone. 
+```{r}
+all_trips_2021$date <- as.Date(all_trips_2021$started_at)
+
+all_trips_2021$year <- format(
+  all_trips_2021$started_at,
+  '%Y'
+)
+
+all_trips_2021$month <- format(
+  all_trips_2021$started_at,
+  '%m'
+)
+
+all_trips_2021$day <- format(
+  all_trips_2021$started_at,
+  '%d'
+)
+
+all_trips_2021$day_of_week <- format(
+  all_trips_2021$started_at,
+  '%A'
+)
+
+all_trips_2021$time <- format(as.Date(all_trips_2021$date), "%H:%M:%S")
+
+all_trips_2021$time <- as_hms((all_trips_2021$started_at))
+
+all_trips_2021$hour <- hour(all_trips_2021$time)
+```
+
+## Order the dataset by the date.
+```{r}
+all_trips_2021 <- arrange(all_trips_2021, started_at)
+```
+
+
+## Create a ride_length in minutes column to determine the value of the difference between the ended_at time and started_at time columns.
+
+## We can also convert the ride_length from to numeric to make it easier for our analysis.
+```{r}
+all_trips_2021$ride_length <- difftime(
+  all_trips_2021$ended_at,
+  all_trips_2021$started_at,
+  units = 'mins'
+)
+
+all_trips_2021$ride_length <- as.numeric(
+  as.character(all_trips_2021$ride_length)
+)
+```
+
+## Check to see if the ride_length was converted sucessfully.
+```{r}
+str(all_trips_2021)
+```
+
+## By viewing the data, we can see rows that are incomplete. We should clean up this data, and handle any duplicate cases as well. We'll use the function .omit, and distinct. We'll also look to make sure that our ride length is always a positive number, as a negative one does not make sense. 
+```{r}
+all_trips_2021 <- na.omit(all_trips_2021) #removes rows with NA in the data
+
+all_trips_2021 <- all_trips_2021[!(all_trips_2021$start_station_name=="" | all_trips_2021$end_station_name==""), ] #removes rows that have a blank in either the start station or end station name
+
+all_trips_2021 <- distinct(all_trips_2021) #remove duplicates
+
+all_trips_2021 <- all_trips_2021[!(all_trips_2021$ride_length <= 0),] #removes data where ride_length is equal to zero or negative
+
+all_trips_2021 <- all_trips_2021 %>%
+  select(-c(start_station_id, end_station_id, start_lat, start_lng, end_lat, end_lng)) #removes columns that we do not need for analysis
+
+
+```
+
+
+## Create new columns to differentiate what month is what season, and what hour corresponds to morning, evening or night.
+```{r}
+all_trips_2021 <- all_trips_2021 %>% 
+  mutate(season = 
+           case_when(month == "03" ~ "Spring",
+                     month == "04" ~ "Spring",
+                     month == "05" ~ "Spring",
+                     month == "06" ~ "Summer",
+                     month == "07" ~ "Summer",
+                     month == "08" ~ "Summer",
+                     month == "09" ~ "Fall",
+                     month == "10" ~ "Fall",
+                     month == "11" ~ "Fall",
+                     month == "12" ~ "Winter",
+                     month == "01" ~ "Winter",
+                     month == "02" ~ "Winter",)
+  )
+
+all_trips_2021 <- all_trips_2021 %>% 
+  mutate(day_hours = 
+           case_when(hour == "0" ~ "Night",
+                     hour == "1" ~ "Night",
+                     hour == "2" ~ "Night",
+                     hour == "3" ~ "Night",
+                     hour == "4" ~ "Night",
+                     hour == "5" ~ "Night",
+                     hour == "6" ~ "Morning",
+                     hour == "7" ~ "Morning",
+                     hour == "8" ~ "Morning",
+                     hour == "9" ~ "Morning",
+                     hour == "10" ~ "Morning",
+                     hour == "11" ~ "Morning",
+                     hour == "12" ~ "Afternoon",
+                     hour == "13" ~ "Afternoon",
+                     hour == "14" ~ "Afternoon",
+                     hour == "15" ~ "Afternoon",
+                     hour == "16" ~ "Afternoon",
+                     hour == "17" ~ "Afternoon",
+                     hour == "18" ~ "Evening",
+                     hour == "19" ~ "Evening",
+                     hour == "20" ~ "Evening",
+                     hour == "21" ~ "Evening",
+                     hour == "22" ~ "Evening",
+                     hour == "23" ~ "Evening",)
+  )
+```
+
+
+## Count how many overall casual riders and member riders there were, the types of bike they rode, the amount of riders by season and time of day. 
+```{r}
+all_trips_2021 %>%
+  group_by(member_casual) %>% 
+  count(member_casual)
+
+all_trips_2021 %>%
+  group_by(member_casual, rideable_type) %>% 
+  count(rideable_type)
+
+all_trips_2021 %>%
+  group_by(member_casual, season) %>% 
+  count(season)
+
+all_trips_2021 %>%
+  group_by(member_casual, hour) %>% 
+  count(hour)
+```
+
+
+## Get the value of how many casual riders and members ride during the morning, afternoon, evening, and night.
+```{r}
+all_trips_2021 %>%
+  group_by(member_casual) %>%
+  filter(day_hours == 'Morning') %>%
+  count(day_hours)
+
+all_trips_2021 %>%
+  group_by(member_casual) %>%
+  filter(day_hours == 'Afternoon') %>%
+  count(day_hours)
+
+all_trips_2021 %>%
+  group_by(member_casual) %>%
+  filter(day_hours == 'Evening') %>%
+  count(day_hours)
+
+all_trips_2021 %>%
+  group_by(member_casual) %>%
+  filter(day_hours == 'Night') %>%
+  count(day_hours)
+```
+
+## Get the average ride length for casual riders and members
+```{r}
+aggregate(all_trips_2021$ride_length ~ all_trips_2021$member_casual, FUN = mean)
+```
+
+## Return the amount of rides each day for both casual riders and members, the average ride length for either customer on each day.
+```{r}
+all_trips_2021$day_of_week <- ordered(all_trips_2021$day_of_week, levels=c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
+
+all_trips_2021 %>%
+  group_by(member_casual) %>%
+  count(day_of_week)
+
+aggregate(all_trips_2021$ride_length ~ all_trips_2021$member_casual + all_trips_2021$day_of_week, FUN = mean)
+```
+
+## Final step is to export the file and perform analysis & visualization.
+```{r}
+write.csv(all_trips_2021, "all_trips_2021.csv", row.names = FALSE)
+```
