@@ -1,9 +1,4 @@
 ---
-title: "Cyclistic_Data_Rmarkdown"
-author: "Visan Ly"
-date: "2022-08-30"
-output: html_document
----
 
 ## Install and load the libraries needed for the data cleaning.
 ```{r}
