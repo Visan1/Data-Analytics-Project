@@ -1,7 +1,7 @@
 # Google-Data-Analytics-Project
 
 
-                                                                Introduction
+                                                Introduction
 
 This is one of the case study projects from the Google Data Analytics certificate. I will be answering the guideline questions and dive into the data to provide visualizations, analysis, and a solution to the posed question.
 
