@@ -21,3 +21,7 @@ The dataset can be found here https://divvy-tripdata.s3.amazonaws.com/index.html
 
 PROCESS:
 I started the data cleaning process in Excel, but quickly found that the files were far too big for Excel, and very large for SQL. I opted to use R, and while RStudio Cloud could not upload the data I found that RStudio Desktop was able to seamlessly. My choice to utilize R came from seeing that the data had over 5 million points of data to work with, and to be able to create an R Markdown worksheet to better map out my process of data cleaning with code step by step. 
+
+
+
+The visualization and presentation was done on Tableau and can be viewed [here.](https://public.tableau.com/app/profile/visan2980/viz/DataAnalyticsProjectDashboard/Story1#1)
