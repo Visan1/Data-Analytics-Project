@@ -1,4 +1,4 @@
-# Google-Data-Analytics-Project
+# Data-Analytics-Project
 
 
                                                          Introduction
