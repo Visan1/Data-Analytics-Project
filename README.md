@@ -25,18 +25,18 @@ Business Task: How do annual members and casual riders use Cyclistic bikes diffe
 
 
 
-PREPARE:
+**PREPARE**:
 The dataset can be found here https://divvy-tripdata.s3.amazonaws.com/index.html. The dataset is public and made available by Motivate International Inc. under the Divvy Bikes License. Credit card numbers are not made available for privacy and security concerns. For the sake of this project, the data is considered credible to use. 
 
 The data contains trips about the number of trips taken per month in a year, by a casual or member rider, the times and dates, etc. Organizing this information to get a breakdown of the differences between casual riders and member riders will help provide us solid information on answering our question of how the use of Cyclistic bikes differ between both types of consumers. 
 
 
 
-PROCESS:
+**PROCESS**:
 I started the data cleaning process in Excel, but quickly found that the files were far too big for Excel, and very large for SQL. I opted to use R, and while RStudio Cloud could not upload the data I found that RStudio Desktop was able to seamlessly. My choice to utilize R came from seeing that the data had over 5 million points of data to work with, and to be able to create an R Markdown worksheet to better map out my process of data cleaning with code step by step. 
 
 
 
 The visualization and presentation was done on Tableau and can be viewed [here.](https://public.tableau.com/app/profile/visan2980/viz/DataAnalyticsProjectDashboard/Story1#1)
 
-##IMAGES
+## IMAGES
