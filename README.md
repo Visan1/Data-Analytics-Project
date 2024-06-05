@@ -15,11 +15,11 @@ Until now, Cyclistic’s marketing strategy relied on building general awareness
 
 
 
-ROLE: I am a junior data analyst working in the marketing analyst team at Cyclistic. My team wants to understand how casual riders and annual members use Cyclistic bikes differently. Then, we will use these insights to come up with marketing strategies to help with our business task.
+**ROLE**: I am a junior data analyst working in the marketing analyst team at Cyclistic. My team wants to understand how casual riders and annual members use Cyclistic bikes differently. Then, we will use these insights to come up with marketing strategies to help with our business task.
 
 
 
-Goal: The overall goal of this project is to design a new marketing strategy from our data insights aimed to convert casual riders into annual members.
+**Goal**: The overall goal of this project is to design a new marketing strategy from our data insights aimed to convert casual riders into annual members.
 Business Task: How do annual members and casual riders use Cyclistic bikes differently?
 
 
