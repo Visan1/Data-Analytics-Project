@@ -8,7 +8,7 @@ This is one of the case study projects from the Google Data Analytics certificat
 
 
 
-SCENARIO: Cyclistic is a bike share company located in Chicago. The bike-share program feature more than 5800 bicycles and 600 docking stations. They set themselves apart by also offering reclining bikes, hand tricycles and cargo bikes, making bike-share more inclusive to people with disabilities and riders who can’t use a standard two-wheeled bike.
+**SCENARIO**: Cyclistic is a bike share company located in Chicago. The bike-share program feature more than 5800 bicycles and 600 docking stations. They set themselves apart by also offering reclining bikes, hand tricycles and cargo bikes, making bike-share more inclusive to people with disabilities and riders who can’t use a standard two-wheeled bike.
 
 Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. The director of marketing, Lily Moreno, believes that maximizing the number of annual members will be the key to future growth. Instead of creating a marketing campaign to target all new customers, the director thinks there is a very good chance to convert casual riders to members.
 
