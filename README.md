@@ -56,8 +56,9 @@ The visualization and presentation was done on Tableau and can be viewed [here.]
 * Saturaday was the busiest day for casual riders, reaching a total of 468,318 riders in 2021
 
 ### **Busiest Season for Riding**
-* Across the four seasons, summer was the busiest account for 43% of the total rides in 2021
+* Across the four seasons, Summer was the busiest account for 43% of the total rides in 2021
 * Winter had the lowest amount of riders, accounting for just 6.6% of total rides in 2021
+* Fall had been analyzed to account for 29.5% of total rides, Spring accounted for 20.8%
 
 ## Recommendations
 
