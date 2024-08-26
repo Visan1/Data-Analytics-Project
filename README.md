@@ -60,5 +60,8 @@ The visualization and presentation was done on Tableau and can be viewed [here.]
 * Winter had the lowest amount of riders, accounting for just 6.6% of total rides in 2021
 * Fall had been analyzed to account for 29.5% of total rides, Spring accounted for 20.8%
 
+### **Amount of Riders By The Hour**
+*
+
 ## Recommendations
 
