@@ -57,7 +57,7 @@ The visualization and presentation was done on Tableau and can be viewed [here.]
 
 ### **Busiest Season for Riding**
 * Across the four seasons, summer was the busiest account for 43% of the total rides in 2021
-* 
+* Winter had the lowest amount of riders, accounting for just 6.6% of total rides in 2021
 
 ## Recommendations
 
