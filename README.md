@@ -20,7 +20,7 @@ As a junior data analyst working in the marketing analyst team at Cyclistic. My 
 
 
 ## **Goal**: 
-The overall goal of this project is to design a new marketing strategy from our data insights aimed to convert casual riders into annual members.
+The overall goal is to design a new marketing strategy extracted from data insights to convert casual riders into annual members.
 
 
 ## **Business Task**: 
