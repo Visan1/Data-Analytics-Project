@@ -15,7 +15,7 @@ Cyclistic’s marketing strategy relied on building general awareness and appeal
 
 
 ## **ROLE**: 
-As a data analyst working in the marketing analyst team at Cyclistic. My team wants to understand how casual riders and annual members use Cyclistic bikes differently. Then, we will use these insights to come up with marketing strategies to help with our business task.
+As a data analyst working in the marketing analyst team at Cyclistic, the team wants to understand how casual riders and annual members use Cyclistic bikes differently. Then, we will use these insights to come up with marketing strategies to help with our business task.
 
 
 
