@@ -28,7 +28,7 @@ How do annual members and casual riders use Cyclistic bikes differently?
 
 
 ## **PREPARE**:
-The dataset can be found here https://divvy-tripdata.s3.amazonaws.com/index.html. The dataset is public and made available by Motivate International Inc. under the Divvy Bikes License. Credit card numbers are not made available for privacy and security concerns. For the sake of this project, the data is considered credible to use. 
+The dataset can be found here https://divvy-tripdata.s3.amazonaws.com/index.html. The dataset is public and made available by Motivate International Inc. under the Divvy Bikes License. 
 
 The data contains trips about the number of trips taken per month in a year, by a casual or member rider, the times and dates, etc. Organizing this information to get a breakdown of the differences between casual riders and member riders will help provide us solid information on answering our question of how the use of Cyclistic bikes differ between both types of consumers. 
 
