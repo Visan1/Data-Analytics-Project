@@ -14,10 +14,6 @@ The company's marketing strategy relies on building general awareness and appeal
 
 
 
-## **ROLE**: 
-As a data analyst working in the marketing analyst team, the team wants to understand how casual riders and annual members use bikes differently. Then, we will use these insights to come up with marketing strategies to help with our overall goal.
-
-
 
 ## **Goal**: 
 The overall goal is to design a new marketing strategy targeting factors extracted from data insights aimed to convert casual riders into annual members.
