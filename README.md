@@ -31,7 +31,7 @@ The data contains trips about the number of trips taken per month in a year, by 
 
 
 ## **PROCESS**:
-I started the data cleaning process in Excel, but quickly found that the files were far too big for Excel, and very large for SQL. I opted to use R, and while RStudio Cloud could not upload the data I found that RStudio Desktop was able to seamlessly. My choice to utilize R came from seeing that the data had over 5 million points of data to work with, and to be able to create an R Markdown worksheet to better map out my process of data cleaning with code step by step. 
+I started the data cleaning process in Excel, but quickly found that the files were far too big for Excel, and was not performing optimally in SQL. I opted to use R, and while RStudio Cloud could not upload the data I found that RStudio Desktop was able to seamlessly. My choice to utilize R came from seeing that the data had over 5 million points of data to work with, and to be able to create an R Markdown worksheet to better map out my process of data cleaning with code step by step. 
 
 
 
