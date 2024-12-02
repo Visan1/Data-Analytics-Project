@@ -40,7 +40,7 @@ The visualization and presentation was done on Tableau and can be viewed [here.]
 ## Insights Summmary
 
 ### **Total Riders in 2021**
-* Bike ride data from January to December 2021 shows members made up about 55.4% of total riders, and casual riders made up 44.6%
+* Bike ride data from January to December 2021 shows members made up approximately 55.4% of total riders, and casual riders made up 44.6%
 * These numbers were 2,539,802 for members and 2,048,302 for casual riders
 
 ### **Average Ride Lengths in 2021**
