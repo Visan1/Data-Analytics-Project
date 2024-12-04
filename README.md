@@ -45,7 +45,7 @@ The visualization and presentation was done on Tableau and can be viewed [here.]
 
 ### **Average Ride Lengths in 2021**
 * Casual riders tend to on average have ride lengths approximately 19 minutes longer than members in 2021
-* Average ride lengths were higher on Saturdays & Sundays for members (15 min length approx.) and casual riders (36 min length approx.)
+* Average ride lengths were higher on Saturdays & Sundays for both members (15 min length approx.) and casual riders (36 min length approx.)
 
 ### **Number of Riders Per Day**
 * Wednesday was the busiest day for members, reaching a total of 397,681 riders in 2021
