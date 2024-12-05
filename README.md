@@ -59,6 +59,6 @@ The visualization and presentation was done on Tableau and can be viewed [here.]
 ### **Amount of Riders By The Hour**
 *
 *
-
+* 
 ## Recommendations
 
