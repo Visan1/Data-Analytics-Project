@@ -16,7 +16,7 @@ The company's marketing strategy relies on building general awareness and appeal
 
 
 ## **Goal**: 
-The overall goal is to design a new marketing strategy targeting factors extracted from data insights aimed to convert casual riders into annual members.
+The goal is to design a new marketing strategy targeting factors extracted from data insights aimed to convert casual riders into annual members.
 
 
 ## **Business Task**: 
