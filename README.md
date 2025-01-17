@@ -20,7 +20,7 @@ The goal is to design a new marketing strategy targeting factors extracted from 
 
 
 ## **Business Task**: 
-How do annual members and casual riders use bikes differently?
+How do annual members and casual riders use our bikes differently?
 
 
 ## **PREPARE**:
