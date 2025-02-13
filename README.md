@@ -21,7 +21,7 @@ The goal is to design a new marketing strategy targeting key indicators that wer
 
 
 ## **Business Task**: 
-How do annual members and casual riders use our bikes differently?
+How do annual members and casual riders use the bikes differently?
 
 
 ## **PREPARE**:
