@@ -36,7 +36,7 @@ The data cleaning process was started in Excel, but quickly found that the files
 
 
 
-The visualization and presentation was done on Tableau and can be viewed [here.](https://public.tableau.com/app/profile/visan2980/viz/DataAnalyticsProjectDashboard/Story1#1)
+The visualization and com presentation was done on Tableau and can be viewed [here.](https://public.tableau.com/app/profile/visan2980/viz/DataAnalyticsProjectDashboard/Story1#1)
 
 ## Insights Summmary
 
