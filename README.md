@@ -62,7 +62,7 @@ The visualization and complete presentation was done on Tableau and can be viewe
 *
 *
 
-## Recommendations
+## Recommended Action Plan
 *
 *
 *
