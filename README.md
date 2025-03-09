@@ -1,4 +1,4 @@
-# Summer Bike Share Marketing Campaign 
+# Summer Bike Share Membership Marketing Campaign 
 ## Data Analytics Project
 
 
