@@ -1,4 +1,4 @@
-# Summer Membership Conversion Marketing Campaign 
+# Membership Conversion Summer Marketing Campaign 
 ## Data Analytics Project
 
 
