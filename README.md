@@ -38,7 +38,7 @@ The data cleaning process was started in Excel, but quickly found that the files
 
 The visualization and complete presentation was done on Tableau and can be viewed [here.](https://public.tableau.com/app/profile/visan2980/viz/DataAnalyticsProjectDashboard/Story1#1)
 
-## Insights Summmary
+## Summary of Key Insights
 
 ### **Total Riders in 2021**
 * Bike ridership data from January to December 2021 shows members made up approximately 55.4% of total riders, and casual riders made up approximately 44.6%
