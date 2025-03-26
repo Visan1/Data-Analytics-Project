@@ -27,7 +27,7 @@ How do annual members and casual riders use the bikes differently?
 ## **PREPARE**:
 The dataset can be found here at https://divvy-tripdata.s3.amazonaws.com/index.html. The dataset is public and made available by Motivate International Inc. under the Divvy Bikes License. 
 
-The data contains the number of trips taken per month in a year by a casual rider or an annual member, the times and dates taken place, etc. Analyzing this information to get a breakdown of the differences between casual riders and member riders will help provide solid insights on answering the question of how the use of bikes differ between both types of consumers. 
+The data contains the number of trips taken per month in a year by a casual rider or an annual member, the times and dates taken place, etc. Analyzing this information to get a breakdown of the differences between casual riders and member riders will help provide solid insights on answering the question of how the use of the bikes differ between both types of consumers. 
 
 
 
