@@ -1,5 +1,5 @@
 # Membership Conversion Summer Marketing Campaign 
-## Data Analytics Project
+## R & Tableau Data Analytics Project
 
 
                                                          Introduction
