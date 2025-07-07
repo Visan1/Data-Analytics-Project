@@ -20,7 +20,7 @@ The company's marketing strategy relies on building general awareness about the 
 The goal is to create a new marketing strategy that incorporates key metrics extracted from dataset analysis to convert casual riders into annual members.
 
 
-## **Business Task**: 
+## **Business Task: What to Find Out**: 
 How do annual members and casual riders use the company bikes differently?
 
 
