@@ -17,7 +17,7 @@ The company's marketing strategy relies on building general awareness about the 
 
 
 ## **Goal**: 
-The goal is to create a new marketing strategy that incorporates key metrics extracted from dataset analysis to convert casual riders into annual members.
+The goal is to create a new marketing strategy that incorporates key metrics extracted from the company dataset to convert casual riders into annual members.
 
 
 ## **Business Task: What To Find Out**: 
