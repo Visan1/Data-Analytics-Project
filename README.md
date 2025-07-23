@@ -21,7 +21,7 @@ The goal is to create a new marketing strategy that incorporates key metrics ext
 
 
 ## **Business Task: What To Find Out**: 
-How do annual members and casual riders use the company bikes? How are they
+How do annual members and casual riders use the company bikes? How are they different
 
 
 ## **PREPARE**:
