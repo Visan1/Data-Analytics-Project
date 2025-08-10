@@ -8,7 +8,7 @@
 
 
 ## **Background**: 
-A bike share company is located in Chicago, Illinois. The company has a bike-share program that features over 5800 bicycles and 600 docking stations. The company offers reclining bikes, hand tricycles and cargo bikes, making bike-sharing more inclusive to people with disabilities and riders who are unable to use a standard two-wheeled bike.
+A bike share company is located in Chicago, Illinois. The company has a bike-share program that features over 5800 bicycles and 600 docking stations. The company offers reclining bikes, hand tricycles, and cargo bikes, making bike-sharing more inclusive to people with disabilities and riders who are unable to use a standard two-wheeled bike.
 
 The company's marketing strategy relies on building general awareness about the brand overall and trying to appeal to broad consumer segments. The financial team has concluded that annual members are much more profitable compared to casual riders. The director of marketing believes that prioritizing maximizing the number of annual members will be the key to future growth. Instead of creating a marketing campaign to target all new customers, the director thinks that there is an great opportunity to focus on converting current casual riders into annual members.
 
