@@ -1,4 +1,4 @@
-# Membership Conversion Summer Marketing Campaign 
+# Membership Promotion Summer Marketing Campaign 
 ## R & Tableau 
 
 
