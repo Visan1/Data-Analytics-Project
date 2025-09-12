@@ -6,7 +6,6 @@
                                                       
 
 
-
 ## **Background**: 
 A bike share company is located in Chicago, Illinois. The company has a bike-share program that features over 5800 bicycles and 600 docking stations. The company offers reclining bikes, hand tricycles, and cargo bikes, making bike-sharing more inclusive to people with disabilities and riders who are unable to use a standard two-wheeled bike.
 
