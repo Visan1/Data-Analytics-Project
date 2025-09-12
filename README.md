@@ -31,7 +31,7 @@ The dataset contains the number of trips taken per month and per year by a casua
 
 
 ## **PROCESS**:
-The data cleaning process was initially started in Microsoft Excel, but it was found that the files had some issues loading, and was not performing optimally in SQL. I opted to use R, and while RStudio Cloud could not upload the data, I found that RStudio Desktop was able to without problems. My choice to utilize R came from seeing that the data had over 5 million points of data to work with, and to create an R Markdown worksheet to better map out my process of data cleaning with code step by step. 
+The data cleaning process was started in Microsoft Excel, but it was found that the files had some issues loading, and was not performing optimally in SQL. I opted to use R, and while RStudio Cloud could not upload the data, I found that RStudio Desktop was able to without problems. My choice to utilize R came from seeing that the data had over 5 million points of data to work with, and to create an R Markdown worksheet to better map out my process of data cleaning with code step by step. 
 
 
 
